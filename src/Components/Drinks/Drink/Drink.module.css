@@ -1,0 +1,59 @@
+.Drink{
+  padding: 20px 100px 20px 120px;
+  border-radius: 20px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #dedede;
+  display: inline-block;
+  line-height: 40px;
+}
+
+.Drink p{
+  margin: 0;
+}
+
+.Flex{
+  display: flex;
+}
+
+.ImageContainer{
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+}
+
+.Image{
+  min-width: 100%;
+  max-height: 100%;
+}
+
+.Controls{
+  line-height: 1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: 1px solid #dedede;
+  padding-left: 10px;
+}
+
+.Button{
+  cursor: pointer;
+  padding: 10px;
+}
+
+.ButtonDisabled{
+  opacity: 0.3;
+  cursor: default;
+}
+
+.Number{
+  padding: 0 10px;
+}
