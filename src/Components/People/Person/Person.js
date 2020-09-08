@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./Person.module.css";
-const Person = (props) => {
-  const [active, setActive] = useState(false);
 
-  const checked = active ? classes.Checked : null;
+const Person = (props) => {
+  const isChecked = props.isChecked ? classes.Checked : undefined;
 
   return (
-    <div onClick={() => setActive(!active)} className={classes.Person}>
+    <div onClick={() => props.check(props.id)} className={classes.Person}>
       <div className={classes.ImageContainer}>
-        <div className={classes.Unchecked+" "+checked}></div>
-        <img className={classes.Image} src={props.image} alt={props.name} />
+        <div className={classes.Unchecked + " " + isChecked}></div>
+        <div
+          className={classes.Image}
+          style={{ backgroundImage: "url(" + props.image + ")" }}
+        ></div>
       </div>
       <p>{props.name}</p>
     </div>

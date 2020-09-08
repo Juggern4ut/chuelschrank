@@ -1,0 +1,8 @@
+.People{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  min-width: calc(100% - 40px);
+  overflow-x: auto;
+  margin: 0 20px;
+}
